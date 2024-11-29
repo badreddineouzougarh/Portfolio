@@ -38,8 +38,7 @@ function Projects() {
               title="Construction Digital Twin"
               description="Part of my research work during the ASCI Summer Research Program, focused on Digital Twin technology for construction management. This involved creating an analytical dashboard to analyze equipment and workers' indoor positioning data in real-time within a construction site. The project also included simulating the construction site using an agent-based modeling system and analyzing site status in real-time."
               ghLink="https://github.com/badreddineouzougarh/Icons_System.git"
-
-              getmoreLink="https://github.com/badreddineouzougarh/Icons_System.git"
+              getmoreLink="https://storage.googleapis.com/baderouz/Digital%20Twins%20AScI%20Poster.pdf"
             />
           </Col>
 
