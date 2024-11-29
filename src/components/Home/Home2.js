@@ -4,10 +4,9 @@ import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaMailBulk } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -19,36 +18,35 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I fell in love with research, and every project has been an opportunity to grow and learn—sometimes in unexpected ways  🤷‍♂️.
               <br />
-              <br />I am fluent in classics like
+              <br />I’m fluent in the classics, like 
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> Python and Javascript . </b>
+              </i>
+              which form the foundation of my work.
+              <br />
+              <br />
+              My field of Interest's are &nbsp;
+              <i>
+                <b className="purple">urban data science, 3D modeling of Urban Features</b> and
+                also in areas related to&nbsp;
+                <b className="purple">IoT data integration.</b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              Whenever possible, I also apply my passion for developing Geoportal and User Interfaces
+              with <b className="purple">Python and JS</b> 
               <i>
                 <b className="purple">
                   {" "}
-                  Modern Javascript Library and Frameworks
+                 Frameworks
                 </b>
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> React.js, Next.js </b>
+                and <b className="purple"> Streamlit.</b>.
               </i>
             </p>
           </Col>
@@ -67,7 +65,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/badreddineouzougarh"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -75,19 +73,10 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
+            
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/badr-ed-dine-ouzougarh-6363831b5/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,12 +86,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="ouzougarhbadred-dine@iav.ac.ma"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <FaMailBulk  />
                 </a>
               </li>
             </ul>

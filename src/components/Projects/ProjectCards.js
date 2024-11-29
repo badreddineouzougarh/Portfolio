@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { MdOutlineReadMore } from "react-icons/md";
 
 function ProjectCards(props) {
   return (
@@ -22,15 +22,15 @@ function ProjectCards(props) {
 
         {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
 
-        {!props.isBlog && props.demoLink && (
+        {!props.isBlog && props.getmoreLink && (
           <Button
             variant="primary"
-            href={props.demoLink}
+            href={props.getmoreLink}
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
+            <MdOutlineReadMore /> &nbsp;
+            {" Read more"}
           </Button>
         )}
       </Card.Body>

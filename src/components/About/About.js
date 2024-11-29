@@ -4,21 +4,26 @@ import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
-
+import GeospatialTechStack from "./GeospatialTech";
 function About() {
   return (
     <Container fluid className="about-section">
       <Particle />
       <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
+        <Row
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            padding: "10px",
+          }}
+        >
           <Col
-            md={7}
+            md={6}
             style={{
-              justifyContent: "center",
-              paddingTop: "30px",
-              paddingBottom: "50px",
+              textAlign: "left",
+              padding: "20px",
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
@@ -27,19 +32,38 @@ function About() {
             <Aboutcard />
           </Col>
           <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
+            md={6}
+            style={{
+              display: "flex",
+              justifyContent: "flex-end",
+              padding: "20px",
+            }}
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <div
+              style={{
+                width: "500px", // Set fixed wrapper width
+                height: "500px", // Set fixed wrapper height
+                overflow: "hidden",
+              }}
+            >
+              <video
+                src="https://storage.googleapis.com/baderouz/video_presentation.mov"
+                width="100%" // Fit the video to the wrapper width
+                height="100%" // Fit the video to the wrapper height
+                controls // Add playback controls
+                preload="auto" // Preload video for faster playback
+              />
+            </div>
           </Col>
         </Row>
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          Programming <strong className="purple">Skillset </strong>
         </h1>
-
         <Techstack />
-
+        <h1 className="project-heading">
+          <strong className="purple">My Geospatial</strong> Kit
+        </h1>
+        <GeospatialTechStack />
         <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
         </h1>

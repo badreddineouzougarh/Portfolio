@@ -16,6 +16,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import BlogPage3 from "./components/Projects/Dronetop";
+import PostDisasterProject from "./components/Projects/Dernafloding.js";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -40,6 +42,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="/Projects/Dronetop" element={<BlogPage3 />} />
+          <Route path="/Projects/Dernafloding" element={< PostDisasterProject/>} />
+
         </Routes>
         <Footer />
       </div>

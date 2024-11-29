@@ -268,6 +268,7 @@ button:focus {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
+  
 }
 
 .heading {
@@ -318,13 +319,14 @@ button:focus {
 }
 
 .home-about-section {
+  background-color: #f3f4f7;
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
 }
 
 .home-about-description {
-  color: white !important;
+  color: rgb(7, 0, 0) !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
@@ -339,7 +341,7 @@ button:focus {
 .home-about-social {
   text-align: center !important;
   padding-top: 25px;
-  color: white !important;
+  color: rgb(2, 0, 0) !important;
 }
 
 .home-about-social-links {
@@ -740,4 +742,25 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+.custom-button {
+  background-color: transparent;
+  border: 2px solid #a24dd386; /* Adjust the color for your stroke */
+  color: #f3f5f7;
+  padding: 10px 20px;
+  border-radius: 50px; /* Makes the button round */
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  position: relative;
+
+  transition: all 0.3s ease-in-out;
+  z-index: 10; /* Bring buttons above other elements */
+
+}
+
+.custom-button:hover {
+  background-color: #f7f7f7;
+  color: rgb(7, 0, 0);
 }
